@@ -19,6 +19,11 @@ export function ExpandingCard() {
           <h2 className="font-display text-4xl md:text-8xl text-[var(--ink)] max-w-4xl leading-[0.95] font-light">
             Less noise. <span className="italic">More revenue.</span>
           </h2>
+          <p className="mt-8 text-[var(--ink-soft)] max-w-2xl text-lg leading-relaxed">
+            Most agencies focus on activity metrics. We focus on qualified pipeline and real business conversations. 
+            Every outreach system we build is structured around your ideal customer profile, approved messaging, and transparent execution. 
+            From LinkedIn automation to cold email and AI workflows, every process is engineered to create measurable growth.
+          </p>
         </Reveal>
       </div>
 
@@ -32,24 +37,22 @@ export function ExpandingCard() {
         <div className="relative px-6 md:px-20 py-20 md:py-48 grid md:grid-cols-12 gap-12 items-end">
           <div className="md:col-span-7">
             <div className="text-[10px] uppercase tracking-[0.35em] text-[var(--beige-light)]/50 mb-8">
-              ◆ Our promise
+              ◆ Our Promise
             </div>
             <h3 className="font-display text-4xl md:text-7xl text-[var(--beige-light)] leading-[1.0] font-light">
               We don't sell <span className="italic">activity.</span><br />
               We deliver <span className="italic">outcomes.</span>
             </h3>
             <p className="mt-10 text-[var(--beige-light)]/70 max-w-xl text-lg leading-relaxed">
-              Every campaign, sequence and automation is engineered for one
-              metric: qualified pipeline that closes. No vanity dashboards.
-              No fluff. Just compounding revenue.
+              Every campaign, sequence, and automation is built to generate meaningful conversations with decision-makers. No generic outreach. No bloated retainers. Just systems designed to create consistent opportunities.
             </p>
           </div>
           <div className="md:col-span-5 grid grid-cols-2 gap-px bg-[var(--beige-light)]/10 rounded-2xl overflow-hidden">
             {[
-              { k: "Reply rate", v: "9.4%" },
-              { k: "Meetings / mo", v: "30+" },
-              { k: "Pipeline added", v: "$2.4M" },
-              { k: "Time to launch", v: "14 days" },
+              { k: "Meetings booked", v: "37+" },
+              { k: "Qualified meetings / mo", v: "30+" },
+              { k: "Campaign launch", v: "4-Day" },
+              { k: "Contracts required", v: "0" },
             ].map((s) => (
               <div key={s.k} className="bg-[var(--ink)] p-8 flex flex-col justify-center border border-[var(--ink-soft)]/20 shadow-inner">
                 <div className="text-[10px] uppercase tracking-[0.25em] text-[var(--beige-light)]/60">{s.k}</div>

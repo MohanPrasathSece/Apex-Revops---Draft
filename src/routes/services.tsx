@@ -20,12 +20,48 @@ export const Route = createFileRoute("/services")({
 });
 
 const services = [
-  { icon: Target, title: "Lead Generation", short: "Pipeline-grade lists, built from intent.", long: "We blend firmographics, technographics and intent signals to assemble lists that convert: verified, enriched and ready to ship.", bullets: ["Verified ICP enrichment", "Intent-based targeting", "CRM-ready exports", "Continuous list refresh"] },
-  { icon: Calendar, title: "Appointment Setting", short: "SDR-grade conversations, on autopilot.", long: "Our team books qualified meetings directly to your calendar. We handle objection handling, qualification and scheduling.", bullets: ["Dedicated SDR pod", "Live qualification", "Calendar integrations", "Daily handoff briefs"] },
-  { icon: Mail, title: "Cold Email Outreach", short: "Deliverability-first. Reply-rate obsessed.", long: "From inbox warm-up to copy that earns the reply, we build outbound systems that land in primary and convert at 3-5x category averages.", bullets: ["Warmed inbox infrastructure", "A/B tested sequences", "Personalized copy", "Real-time dashboards"] },
-  { icon: Linkedin, title: "LinkedIn Outreach", short: "Social selling, engineered.", long: "Multi-touch LinkedIn campaigns combined with thought leadership and human-led conversations to fill your pipeline.", bullets: ["Profile optimization", "Multi-step sequences", "Content amplification", "Manual follow-up"] },
-  { icon: Globe, title: "Website Building", short: "Conversion-engineered web presence.", long: "Premium B2B websites built to turn traffic into pipeline. Fast, accessible, beautifully animated and architected for SEO.", bullets: ["Conversion strategy", "Bespoke design", "CMS + analytics", "Sub-second load times"] },
-  { icon: Bot, title: "AI Automation", short: "Custom agents that run your ops.", long: "Custom GPT workflows, CRM enrichment agents and outbound automation that cut SDR busywork by 60%.", bullets: ["GPT workflow design", "CRM auto-enrichment", "Inbox triage agents", "Reporting automation"] },
+  { 
+    icon: Target, 
+    title: "Lead Generation", 
+    short: "Pipeline-ready prospect lists built around intent signals, ICP targeting, and active decision-makers.", 
+    long: "Targeted prospect lists built around your ideal customer profile, intent signals, active decision-makers, and buying behavior.", 
+    bullets: ["ICP-based targeting", "Active LinkedIn user sourcing", "Industry & company filtering", "Verified decision-maker data"] 
+  },
+  { 
+    icon: Calendar, 
+    title: "Appointment Setting", 
+    short: "Dedicated outbound systems that generate qualified conversations and book meetings directly onto your calendar.", 
+    long: "Dedicated outbound appointment-setting systems using cold calling, qualification workflows, and real-time calendar booking.", 
+    bullets: ["Human outbound callers", "Qualified meeting booking", "Script development", "Weekly optimization & reporting"] 
+  },
+  { 
+    icon: Mail, 
+    title: "Cold Email Outreach", 
+    short: "Deliverability-first cold email infrastructure paired with personalized multi-touch messaging sequences.", 
+    long: "Deliverability-focused cold email systems with domain setup, inbox warm-up, personalized copywriting, and reply handling.", 
+    bullets: ["Domain & inbox infrastructure", "Warm-up & deliverability setup", "Multi-step email sequences", "Slack reply notifications"] 
+  },
+  { 
+    icon: Linkedin, 
+    title: "LinkedIn Outreach", 
+    short: "Multi-touch LinkedIn campaigns combining profile warming, outreach automation, and social selling strategies.", 
+    long: "LinkedIn outreach systems designed to build familiarity, generate conversations, and book qualified meetings with decision-makers.", 
+    bullets: ["Sales Navigator targeting", "Multi-touch outreach sequences", "AI-assisted engagement", "Account-safe automation setup"] 
+  },
+  { 
+    icon: Globe, 
+    title: "Website Building", 
+    short: "Modern, conversion-focused websites engineered for credibility, SEO, speed, and lead generation.", 
+    long: "Premium B2B websites designed for conversion, credibility, speed, and lead generation across desktop and mobile.", 
+    bullets: ["Conversion-focused layouts", "SEO-ready structure", "CMS & analytics setup", "Fast, responsive performance"] 
+  },
+  { 
+    icon: Bot, 
+    title: "AI Automation", 
+    short: "Custom AI workflows and operational automations designed to eliminate repetitive manual work across your business.", 
+    long: "Custom AI workflows and automations that streamline operations, improve lead handling, and eliminate repetitive manual work.", 
+    bullets: ["CRM automation", "AI lead scoring", "Automated follow-ups", "Workflow integrations with N8N & AI tools"] 
+  },
 ];
 
 function ServiceCard({ s, i, onOpen }: { s: typeof services[number]; i: number; onOpen: () => void }) {
@@ -81,14 +117,14 @@ function ServicesHero() {
       <motion.div style={{ y }} aria-hidden className="absolute top-4 right-8 font-display italic text-[16vw] md:text-[14vw] text-ink opacity-5 leading-[0.85] select-none pointer-events-none">services</motion.div>
       <div className="relative max-w-7xl mx-auto">
         <div className="text-[10px] uppercase tracking-[0.35em] text-[var(--ink-soft)] mb-6">◆ Capabilities</div>
-        <h1 className="font-display text-[clamp(3rem,9vw,9rem)] leading-[1.15] md:leading-[0.9] text-[var(--ink)] font-light">
+        <h1 className="font-display text-[clamp(3rem,9vw,9rem)] leading-[1.2] md:leading-[1.1] text-[var(--ink)] font-light">
           <RevealText text="Everything you need" />
-          <br /><span className="italic"><RevealText text="to grow on purpose." /></span>
+          <br /><span className="italic"><RevealText text="to scale outbound growth." /></span>
         </h1>
         <Reveal delay={0.4}>
           <p className="mt-10 max-w-2xl text-lg text-[var(--ink-soft)] leading-relaxed">
-            Six interlocking services. One revenue engine. Engage one capability or
-            run the full system: every engagement is bespoke to your motion.
+            Apex RevOps combines outreach, appointment setting, automation, and conversion systems into one unified revenue engine. 
+            Every engagement is built around your market, offer, and growth goals.
           </p>
         </Reveal>
       </div>

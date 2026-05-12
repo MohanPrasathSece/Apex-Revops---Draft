@@ -8,38 +8,32 @@ const services = [
   { 
     icon: Target, 
     title: "Lead Generation", 
-    desc: "Hyper-targeted prospect lists built from intent signals and ideal customer DNA.",
-    bullets: ["Verified ICP enrichment", "Intent-based targeting", "CRM-ready exports"]
+    desc: "Hyper-targeted prospect research based on industry, company size, buying intent, and decision-maker behavior.",
   },
   { 
     icon: Calendar, 
     title: "Appointment Setting", 
-    desc: "SDR-grade conversations placing qualified decision-makers on your calendar.",
-    bullets: ["Dedicated SDR pod", "Live qualification", "Calendar sync"]
+    desc: "Dedicated outbound systems designed to book qualified meetings directly onto your calendar.",
   },
   { 
     icon: Mail, 
     title: "Cold Email Outreach", 
-    desc: "Deliverability-first infrastructure paired with copy that earns the reply.",
-    bullets: ["Inbox infrastructure", "A/B tested sequences", "Personalized copy"]
+    desc: "Deliverability-focused infrastructure with personalized messaging and multi-step outbound sequences.",
   },
   { 
     icon: Linkedin, 
     title: "LinkedIn Outreach", 
-    desc: "Human-led, multi-touch social selling that builds authority while booking meetings.",
-    bullets: ["Profile optimization", "Multi-step sequences", "Human-led follow-up"]
+    desc: "Multi-touch LinkedIn campaigns combining profile warming, messaging, and automation for higher response rates.",
   },
   { 
     icon: Globe, 
     title: "Website Building", 
-    desc: "High-conversion sites engineered to turn traffic into qualified pipeline.",
-    bullets: ["Conversion strategy", "Bespoke design", "Sub-second load times"]
+    desc: "Modern, conversion-focused websites built for credibility, speed, and lead generation.",
   },
   { 
     icon: Bot, 
     title: "AI Automation", 
-    desc: "Custom GPT workflows, CRM enrichment and agents that work while you sleep.",
-    bullets: ["GPT workflow design", "CRM auto-enrichment", "Inbox triage agents"]
+    desc: "Custom AI workflows, CRM automation, reporting systems, and operational automations built around your business.",
   },
 ];
 
@@ -162,6 +156,9 @@ export function HorizontalServices() {
             <h2 className="font-display text-4xl md:text-8xl text-[var(--ink)] leading-[0.95] font-light mt-12 md:mt-0">
               A full-stack <br/><span className="italic">revenue engine.</span>
             </h2>
+            <p className="mt-8 text-[var(--ink-soft)] max-w-2xl text-lg leading-relaxed">
+              We combine outbound systems, automation, and conversion-focused execution into one streamlined growth operation.
+            </p>
           </Reveal>
           <motion.div 
             style={{ y: labelY, willChange: "transform" }} 

@@ -42,14 +42,13 @@ export const Route = createRootRoute({
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Apex RevOps · Growth Solutions That Actually Work" },
-      { name: "description", content: "Apex RevOps: premium B2B lead generation, cold outreach and AI automation that delivers booked meetings, not promises." },
+      { title: "Apex RevOps · B2B Pipeline Generation & Outreach Automation" },
+      { name: "description", content: "We help B2B companies generate qualified meetings through LinkedIn outreach, cold email, cold calling, AI automation, and conversion-focused systems built for predictable growth." },
       { name: "author", content: "Apex RevOps" },
-      { property: "og:title", content: "Apex RevOps · Growth Solutions That Actually Work" },
-      { property: "og:description", content: "Premium B2B lead generation and AI automation for revenue teams." },
+      { property: "og:title", content: "Apex RevOps · B2B Pipeline Generation & Outreach Automation" },
+      { property: "og:description", content: "Qualified meetings through LinkedIn, cold email, and AI automation." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
-      { name: "twitter:site", content: "@apexrevops" },
     ],
     links: [{ rel: "stylesheet", href: appCss }],
   }),
@@ -72,7 +71,7 @@ function RootComponent() {
         <Outlet />
       </main>
 
-      {!isContact && <CTA />}
+      <CTA />
       <Footer />
       <ScrollToTop />
     </>

@@ -4,10 +4,10 @@ import { Reveal } from "../Reveal";
 import { GlobeInteractive } from "../ui/cobe-globe-interactive";
 
 const steps = [
-  { n: "01", title: "Discover", text: "We map your ICP, offer and motion. No assumptions, only data, extracted in our 90-minute audit." },
-  { n: "02", title: "Engineer", text: "Infrastructure, copy and sequences built bespoke to your unique market and category." },
-  { n: "03", title: "Launch", text: "Multi-channel campaigns go live with daily monitoring, A/B testing and tuning." },
-  { n: "04", title: "Compound", text: "We optimize, automate and scale what's working, relentlessly and forever." },
+  { n: "01", title: "Discover", text: "We begin with a structured onboarding and discovery process to understand your ICP, offer, positioning, buyer behavior, and growth objectives." },
+  { n: "02", title: "Engineer", text: "We build the infrastructure, messaging systems, outreach workflows, automations, and campaign assets tailored to your market." },
+  { n: "03", title: "Launch", text: "Multi-channel campaigns go live across LinkedIn, cold email, calling, and automation systems with daily monitoring and optimization." },
+  { n: "04", title: "Optimize", text: "We continuously improve targeting, messaging, reply rates, conversion performance, and operational workflows to scale results over time." },
 ];
 
 function Card({ i, total, item }: { i: number; total: number; item: typeof steps[number] }) {
@@ -46,9 +46,9 @@ export function StackedCards() {
       <div className="max-w-6xl mx-auto">
         {/* Removed GlobeInteractive on mobile for performance */}
         <Reveal>
-          <div className="text-[10px] uppercase tracking-[0.35em] text-[var(--ink-soft)] mb-4">◆ The process</div>
+          <div className="text-[10px] uppercase tracking-[0.35em] text-[var(--ink-soft)] mb-4">◆ The Process</div>
           <h2 className="font-display text-5xl md:text-8xl text-[var(--ink)] max-w-3xl leading-[0.95] mb-20 font-light">
-            Four steps to a <span className="italic">predictable engine.</span>
+            Four steps to a <br /><span className="italic">predictable pipeline engine.</span>
           </h2>
         </Reveal>
         <div className="space-y-6">

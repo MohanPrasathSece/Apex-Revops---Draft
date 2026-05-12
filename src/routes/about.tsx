@@ -17,18 +17,20 @@ export const Route = createFileRoute("/about")({
 });
 
 const timeline = [
-  { year: "2021", title: "Founded in a back room", text: "Two operators, one mission: kill outbound spam, build pipelines that compound." },
-  { year: "2022", title: "First $1M in client pipeline", text: "30 campaigns, 12,000 personalized emails, our first repeatable playbook." },
-  { year: "2023", title: "AI automation lab launched", text: "Custom GPT agents and workflow infra for revenue teams." },
-  { year: "2024", title: "150K+ emails, 300+ meetings", text: "Trusted by founders, CMOs and SDR leaders across SaaS, fintech and AI." },
-  { year: "2025", title: "Apex Edge becomes a system", text: "From boutique to multidisciplinary growth partner, without losing the craft." },
+  { year: "2021", title: "Started with one goal", text: "Build outbound systems that create real conversations instead of generic spam campaigns." },
+  { year: "2022", title: "First repeatable outbound framework", text: "Launched multi-channel outreach systems combining LinkedIn, email, and appointment setting for B2B clients." },
+  { year: "2023", title: "Expansion into AI automation", text: "Introduced custom workflow automations, CRM systems, AI-powered lead handling, and operational automations." },
+  { year: "2024", title: "Scaled across industries", text: "Worked with MSPs, consultants, SaaS companies, cybersecurity firms, and agencies across the US, Canada, and Australia." },
+  { year: "2025", title: "Apex becomes a complete revenue partner", text: "Expanded from outreach execution into full outbound infrastructure, automation systems, websites, and white-label fulfillment." },
 ];
 
 const values = [
-  { t: "Craft over volume", d: "Every email is read before it ships. Every metric is interrogated." },
-  { t: "Transparency by default", d: "You see the numbers we see. Always. No black box." },
-  { t: "Outcomes, not activity", d: "Meetings, pipeline, revenue. The rest is noise." },
-  { t: "Long horizons", d: "We design systems that compound, not campaigns that spike." },
+  { t: "Precision Over Volume", d: "Every campaign is built around a clearly defined ICP, personalized messaging, and channel-specific execution." },
+  { t: "Transparency by Default", d: "You see the same metrics, reporting, and campaign activity we see. No hidden processes or black-box delivery." },
+  { t: "Outcomes That Matter", d: "We focus on qualified meetings, pipeline growth, and real business opportunities — not vanity metrics." },
+  { t: "Systems That Compound", d: "Our outreach and automation systems are designed for long-term scalability, not short-term spikes." },
+  { t: "Multi-Channel Execution", d: "LinkedIn outreach, cold email, appointment setting, and AI automation working together as one coordinated system." },
+  { t: "Fast, Flexible Engagements", d: "Month-to-month partnerships with fast onboarding and no unnecessary long-term lock-ins." },
 ];
 
 function AboutHero() {
@@ -42,16 +44,18 @@ function AboutHero() {
       <div className="relative max-w-7xl mx-auto">
         <div className="text-[10px] uppercase tracking-[0.35em] text-[var(--ink-soft)] mb-6">◆ About Apex RevOps</div>
         <h1 className="font-display text-[clamp(3rem,9vw,9rem)] leading-[0.9] text-[var(--ink)] font-light">
-          <RevealText text="A boutique" />
+          <RevealText text="Revenue systems" />
           <br />
-          <span className="italic"><RevealText text="revenue studio." /></span>
+          <span className="italic"><RevealText text="built for modern B2B growth." /></span>
         </h1>
         <motion.div style={{ y: y1 }} className="mt-12 grid md:grid-cols-12 gap-12">
-          <Reveal delay={0.4} className="md:col-span-6 md:col-start-7">
+          <Reveal delay={0.4} className="md:col-span-8 md:col-start-5">
             <p className="text-lg text-[var(--ink-soft)] leading-relaxed">
-              We work with a small, deliberate roster of B2B companies, pairing strategy,
-              copy, infrastructure and AI to turn outbound from a cost center into a
-              compounding asset.
+              Apex RevOps helps B2B companies build predictable outbound pipeline through LinkedIn outreach, 
+              cold email, appointment setting, AI automation, and revenue-focused systems.
+              We work with a focused group of clients across SaaS, MSP, consulting, cybersecurity, 
+              fintech, and service industries, combining strategy, execution, and automation 
+              into one scalable growth engine.
             </p>
           </Reveal>
         </motion.div>
@@ -68,9 +72,12 @@ function ParallaxQuote() {
     <section ref={ref} className="py-32 px-6 overflow-hidden bg-[var(--ink)] text-[var(--beige-light)] relative">
       <div className="absolute inset-0 noise-bg opacity-[0.05]" />
       <motion.div style={{ y }} className="relative max-w-5xl mx-auto text-center">
-        <div className="text-[10px] uppercase tracking-[0.35em] opacity-50 mb-8">◆ Manifesto</div>
-        <p className="font-display text-3xl md:text-6xl leading-[1.15] font-light">
-          We believe outbound is a craft, not a numbers game. <span className="italic opacity-70">Volume without taste is spam.</span> Taste without rigor is poetry. We do both.
+        <div className="text-[10px] uppercase tracking-[0.35em] opacity-50 mb-8">◆ Our Philosophy</div>
+        <p className="font-display text-2xl md:text-5xl leading-[1.15] font-light">
+          We believe outbound growth should feel structured, relevant, and human. 
+          Mass outreach without strategy becomes noise. Strategy without execution produces no pipeline. 
+          Apex combines both through targeted systems, transparent processes, and consistent optimization. 
+          Every campaign is built around the right audience, the right messaging, and measurable outcomes.
         </p>
       </motion.div>
     </section>
@@ -119,8 +126,10 @@ function AboutPage() {
       <section className="py-32 px-6 bg-[var(--beige-light)]">
         <div className="max-w-6xl mx-auto">
           <Reveal>
-            <div className="text-[10px] uppercase tracking-[0.35em] text-[var(--ink-soft)] mb-4">◆ Our story</div>
-            <h2 className="font-display text-5xl md:text-7xl text-[var(--ink)] mb-20 font-light">A short timeline.</h2>
+            <div className="text-[10px] uppercase tracking-[0.35em] text-[var(--ink-soft)] mb-4">◆ Our Story</div>
+            <h2 className="font-display text-5xl md:text-7xl text-[var(--ink)] mb-20 font-light">
+              Built through execution, <br /><span className="italic">not theory.</span>
+            </h2>
           </Reveal>
           <div className="space-y-0 relative border-l-2 border-[var(--ink)]/10 ml-4 md:ml-12 pl-8 md:pl-16">
             {timeline.map((t, i) => (
@@ -150,8 +159,43 @@ function AboutPage() {
       <ParallaxQuote />
 
       <StickyNarrative />
+      
+      <section className="py-32 px-6 bg-[var(--beige-light)]">
+        <div className="max-w-7xl mx-auto grid md:grid-cols-12 gap-12">
+          <div className="md:col-span-5">
+            <Reveal>
+              <div className="text-[10px] uppercase tracking-[0.35em] text-[var(--ink-soft)] mb-4">◆ How We Work</div>
+              <h2 className="font-display text-5xl md:text-7xl text-[var(--ink)] leading-[0.95] font-light">
+                Structured systems. <br /><span className="italic">Clear execution.</span>
+              </h2>
+            </Reveal>
+          </div>
+          <div className="md:col-span-7">
+            <Reveal delay={0.2}>
+              <p className="text-xl text-[var(--ink)] leading-relaxed">
+                Every engagement starts with onboarding, ICP definition, messaging approval, 
+                and infrastructure setup before outreach begins.
+              </p>
+              <p className="mt-8 text-[var(--ink-soft)] text-lg leading-relaxed">
+                From prospect sourcing and automation setup to campaign optimization and reply handling, 
+                every step follows a transparent process built for consistency and scale.
+              </p>
+            </Reveal>
+          </div>
+        </div>
+      </section>
 
-
+      <section className="py-24 px-6 bg-[var(--beige)] border-t border-[var(--ink)]/5 text-center">
+        <div className="max-w-4xl mx-auto">
+          <Reveal>
+            <div className="text-[10px] uppercase tracking-[0.35em] text-[var(--ink-soft)] mb-8">◆ Trusted By</div>
+            <p className="text-lg md:text-2xl text-[var(--ink-soft)] leading-relaxed">
+              Apex supports growing SaaS companies, MSPs, consultants, agencies, cybersecurity firms, 
+              fintech brands, and service businesses looking for scalable outbound growth systems.
+            </p>
+          </Reveal>
+        </div>
+      </section>
     </>
   );
 }

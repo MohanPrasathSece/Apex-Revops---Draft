@@ -53,6 +53,10 @@ export function Hero() {
       >
         {/* Removed Edge Solutions header */}
 
+        <div className="text-[10px] uppercase tracking-[0.35em] text-[var(--ink-soft)] mb-8">
+          ◆ B2B Pipeline Generation & Outreach Automation
+        </div>
+
         <h1 className="font-display text-[clamp(2.5rem,10vw,11rem)] leading-[0.9] text-[var(--ink)] font-light">
           <RevealText text="Revenue" />
           <br />
@@ -70,9 +74,7 @@ export function Hero() {
             } : {})}
             className="md:col-span-5 text-base md:text-lg text-[var(--ink-soft)] leading-relaxed max-w-md"
           >
-            An elite B2B growth agency specializing in targeted lead generation,
-            appointment setting, and intelligent outreach automation. Built for teams
-            that demand predictable pipeline.
+            We help B2B companies generate qualified meetings through LinkedIn outreach, cold email, cold calling, AI automation, and conversion-focused systems built for predictable growth.
           </motion.p>
 
           <motion.div
@@ -83,9 +85,9 @@ export function Hero() {
             } : {})}
             className="md:col-span-7 flex flex-wrap items-center gap-4 md:justify-end"
           >
-            <MagneticButton href="/contact">Schedule a meeting</MagneticButton>
+            <MagneticButton href="/contact">Schedule a Meeting</MagneticButton>
             <MagneticButton href="/services" variant="ghost">
-              Explore services
+              Explore Services
             </MagneticButton>
           </motion.div>
         </div>

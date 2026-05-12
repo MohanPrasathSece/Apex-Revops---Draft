@@ -5,10 +5,10 @@ import { Counter } from "../Counter";
 import { GlobeInteractive } from "../ui/cobe-globe-interactive";
 
 const metrics = [
-  { v: 400, s: "+", k: "Campaigns shipped", note: "Across SaaS, fintech and AI" },
-  { v: 150, s: "K+", k: "Personalized emails", note: "Hand-crafted, never templated" },
-  { v: 300, s: "+", k: "Meetings booked", note: "Qualified, calendar-ready" },
-  { v: 98, s: "%", k: "Client retention", note: "12-month renewal rate" },
+  { v: 400, s: "+", k: "Campaigns Shipped", note: "Outbound systems launched across SaaS, IT, consulting, AI, and service industries." },
+  { v: 150, s: "K+", k: "Personalized Outreach", note: "Multi-touch LinkedIn, cold email, and cold calling campaigns tailored to every ICP." },
+  { v: 300, s: "+", k: "Meetings Booked", note: "Qualified appointments booked directly with decision-makers." },
+  { v: 98, s: "%", k: "Client Retention", note: "Long-term client partnerships built through transparent delivery and measurable results." },
 ];
 
 export function Stats() {
@@ -32,9 +32,9 @@ export function Stats() {
         <div className="grid lg:grid-cols-12 gap-16 lg:gap-8 items-center">
           <div className="lg:col-span-7">
             <Reveal>
-              <div className="text-[10px] uppercase tracking-[0.35em] text-[var(--ink-soft)] mb-4">◆ Track record</div>
+              <div className="text-[10px] uppercase tracking-[0.35em] text-[var(--ink-soft)] mb-4">◆ Track Record</div>
               <h2 className="font-display text-4xl md:text-7xl text-[var(--ink)] max-w-3xl leading-[0.95] font-light">
-                Numbers we've earned, <span className="italic">slowly.</span>
+                Numbers we've earned <span className="italic">through execution.</span>
               </h2>
             </Reveal>
 

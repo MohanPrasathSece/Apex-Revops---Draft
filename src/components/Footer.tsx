@@ -45,7 +45,7 @@ export function Footer() {
             </Link>
           </div>
           <div className="md:col-span-2">
-            <div className="text-[10px] uppercase tracking-[0.3em] opacity-50 mb-5">Pages</div>
+            <div className="text-[10px] uppercase tracking-[0.3em] opacity-50 mb-5">Quick Links</div>
             <ul className="space-y-3 text-sm">
               {[
                 { to: "/", label: "Home" },
@@ -65,8 +65,10 @@ export function Footer() {
             <div className="text-[10px] uppercase tracking-[0.3em] opacity-50 mb-5">Services</div>
             <ul className="space-y-3 text-sm opacity-80">
               <li><Link to="/services" onClick={() => window.scrollTo(0, 0)} className="hover:text-[var(--beige-light)] transition">Lead Generation</Link></li>
-              <li><Link to="/services" onClick={() => window.scrollTo(0, 0)} className="hover:text-[var(--beige-light)] transition">Cold Email</Link></li>
+              <li><Link to="/services" onClick={() => window.scrollTo(0, 0)} className="hover:text-[var(--beige-light)] transition">Cold Email Outreach</Link></li>
               <li><Link to="/services" onClick={() => window.scrollTo(0, 0)} className="hover:text-[var(--beige-light)] transition">LinkedIn Outreach</Link></li>
+              <li><Link to="/services" onClick={() => window.scrollTo(0, 0)} className="hover:text-[var(--beige-light)] transition">Appointment Setting</Link></li>
+              <li><Link to="/services" onClick={() => window.scrollTo(0, 0)} className="hover:text-[var(--beige-light)] transition">Website Development</Link></li>
               <li><Link to="/services" onClick={() => window.scrollTo(0, 0)} className="hover:text-[var(--beige-light)] transition">AI Automation</Link></li>
             </ul>
           </div>
@@ -78,8 +80,8 @@ export function Footer() {
           </div>
         </motion.div>
         <div className="flex flex-col md:flex-row items-center justify-between pt-8 text-[11px] opacity-50">
-          <div>© {new Date().getFullYear()} Apex RevOps. All rights reserved.</div>
-          <div className="mt-3 md:mt-0">Crafted with precision · Built for revenue. Developed by Zyra Digitals.</div>
+          <div>© 2026 Apex RevOps. All rights reserved.</div>
+          <div className="mt-3 md:mt-0">Built for revenue growth and scalable outbound systems.</div>
         </div>
       </div>
     </footer>

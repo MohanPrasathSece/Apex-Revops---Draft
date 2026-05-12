@@ -10,10 +10,10 @@ import { LogoMarquee } from "../components/sections/LogoMarquee";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Apex RevOps · Growth Solutions That Actually Work" },
-      { name: "description", content: "Premium B2B lead generation, cold outreach and AI automation that books qualified meetings at scale." },
-      { property: "og:title", content: "Apex RevOps · Growth Solutions That Actually Work" },
-      { property: "og:description", content: "Premium B2B lead generation, cold outreach and AI automation that books qualified meetings at scale." },
+      { title: "Apex RevOps · B2B Pipeline Generation & Outreach Automation" },
+      { name: "description", content: "We help B2B companies generate qualified meetings through LinkedIn outreach, cold email, cold calling, AI automation, and conversion-focused systems." },
+      { property: "og:title", content: "Apex RevOps · B2B Pipeline Generation & Outreach Automation" },
+      { property: "og:description", content: "Qualified meetings through LinkedIn, cold email, and AI automation." },
     ],
   }),
   component: Index,

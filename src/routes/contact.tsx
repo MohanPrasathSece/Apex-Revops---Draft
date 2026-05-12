@@ -50,7 +50,7 @@ function ContactHero() {
 
         <h1 className="font-display text-[clamp(3rem,9vw,9rem)] leading-[0.9] text-[var(--ink)] font-light">
           <RevealText text="Tell us about" />
-          <br /><span className="italic"><RevealText text="your ambitions." /></span>
+          <br /><span className="italic"><RevealText text="your growth goals." /></span>
         </h1>
       </div>
     </section>
@@ -78,14 +78,16 @@ function ContactPage() {
         <div className="max-w-7xl mx-auto grid lg:grid-cols-12 gap-16">
           <Reveal className="lg:col-span-5">
             <div className="space-y-12 lg:sticky lg:top-32">
-              <p className="text-[var(--ink-soft)] text-lg leading-relaxed max-w-md">
-                Whether you need one capability or a full revenue engine, expect an initial
-                response within 1 hour and a tailored proposal within 24 hours.
+              <div className="text-[10px] uppercase tracking-[0.35em] text-[var(--ink-soft)] mb-4">◆ Ready to scale?</div>
+              <p className="text-[var(--ink-soft)] text-lg md:text-xl leading-relaxed max-w-md">
+                Whether you need LinkedIn outreach, cold email, appointment setting, or a complete outbound system, 
+                we build scalable revenue engines designed for predictable growth. 
+                Tell us about your business and goals, and we’ll recommend the best outbound system for your market.
               </p>
               <div className="space-y-5">
                 {[
                   { icon: Mail, label: "Email", value: "rosh@apex-revops.com", link: "mailto:rosh@apex-revops.com" },
-                  { icon: Calendar, label: "Service Level", value: "1-Hour Response · 24-Hour Proposal" },
+                  { icon: Calendar, label: "Service Level", value: "Fast Response · Tailored Proposal · Transparent Process" },
                 ].map((c) => (
                   <motion.div
                     key={c.label}
@@ -116,10 +118,10 @@ function ContactPage() {
                 <Calendar className="w-6 h-6 md:w-8 md:h-8" />
               </div>
               <h2 className="font-display text-3xl md:text-5xl text-[var(--ink)] leading-[1.1] mb-6 font-light">
-                Ready to scale your pipeline?
+                Book a direct strategy session.
               </h2>
               <p className="text-[var(--ink-soft)] text-base md:text-lg mb-10 max-w-md mx-auto leading-relaxed">
-                Skip the back-and-forth. Book a direct strategy session with our team to map out your custom revenue engine.
+                Skip unnecessary back-and-forth. Schedule a discovery call to discuss your outreach goals, pipeline targets, automation opportunities, and revenue growth strategy.
               </p>
               <div>
                 <a 
@@ -133,6 +135,29 @@ function ContactPage() {
               </div>
             </div>
           </Reveal>
+        </div>
+      </section>
+
+      <section className="py-32 px-6 bg-[var(--beige)] border-t border-[var(--ink)]/5">
+        <div className="max-w-7xl mx-auto">
+          <Reveal>
+            <div className="text-[10px] uppercase tracking-[0.35em] text-[var(--ink-soft)] mb-16 text-center">◆ Why Apex RevOps</div>
+          </Reveal>
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+            {[
+              { t: "Multi-Channel Outbound Systems", d: "LinkedIn outreach, cold email, appointment setting, and automation working together." },
+              { t: "Fast Campaign Launch", d: "Outbound systems launched quickly with structured onboarding and clear execution." },
+              { t: "Transparent Communication", d: "Dedicated Slack updates, reporting visibility, and collaborative workflows." },
+              { t: "No Long-Term Lock-In", d: "Flexible month-to-month engagements built around performance." },
+            ].map((p, i) => (
+              <Reveal key={i} delay={i * 0.1}>
+                <div className="p-8 rounded-[2rem] bg-[var(--beige-light)] border border-[var(--ink)]/5 h-full">
+                  <div className="font-display text-2xl text-[var(--ink)] mb-4 leading-tight">{p.t}</div>
+                  <p className="text-[var(--ink-soft)] text-sm leading-relaxed">{p.d}</p>
+                </div>
+              </Reveal>
+            ))}
+          </div>
         </div>
       </section>
     </>
