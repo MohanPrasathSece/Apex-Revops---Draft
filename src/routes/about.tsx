@@ -17,13 +17,13 @@ export const Route = createFileRoute("/about")({
 });
 
 const timeline = [
-  { year: "2020", title: "Start operations.", text: "Initial launch of Apex RevOps with focus on revenue generation systems." },
-  { year: "2021", title: "Initiated outbound systems", text: "Focused on creating real conversations instead of generic spam campaigns." },
-  { year: "2022", title: "Expansion into inbound channels", text: "Introduced SEO, paid advertising campaigns and inbound lead generation systems to support outbound growth channels." },
-  { year: "2023", title: "Expansion into AI automation", text: "Introduced AI automation systems and workflow infrastructure." },
-  { year: "2024", title: "Scaled across industries", text: "Worked with MSPs, consultants, SaaS companies, cybersecurity firms and agencies across the US, Canada and Australia." },
-  { year: "2025", title: "Omni-channel revenue partner", text: "Expanded from outreach execution into full outbound infrastructure, automation systems, websites and white-label fulfillment." },
-  { year: "2026", title: "Apex becomes revenue-focused", text: "No bloated agency retainers. If your product or service has strong market fit, we work on a revenue-share basis focused on measurable growth." },
+  { year: "2020", title: "Start operations", text: "Initial launch of Apex RevOps with focus on revenue generation systems." },
+  { year: "2021", title: "Initiated Outbound Systems", text: "Focused on creating real conversations instead of generic spam campaigns." },
+  { year: "2022", title: "Expansion Into Inbound Channels", text: "Introduced SEO, paid advertising campaigns and inbound lead generation systems to support outbound growth channels." },
+  { year: "2023", title: "Expansion Into AI Automation", text: "Introduced AI automation systems and workflow infrastructure." },
+  { year: "2024", title: "Scaled Across Industries", text: "Worked with MSPs, consultants, SaaS companies, cybersecurity firms and agencies across the US, Canada and Australia." },
+  { year: "2025", title: "Omni-Channel Revenue Partner", text: "Expanded from outreach execution into full outbound infrastructure, automation systems, websites and white-label fulfillment." },
+  { year: "2026", title: "Apex Becomes Revenue-Focused", text: "No bloated agency retainers. If your product or service has strong market fit, we work on a revenue-share basis focused on measurable growth." },
 ];
 
 const values = [
